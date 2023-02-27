@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+{% block title %} 
+{{ super() }} 
+Respuesta predicción 
+{% endblock %} 
+{% block content %}
+<div class="container">
+<h3> Hola {{ username }}</h3>
+<h4> Estos son las caracterìsticas de tu jugador</h4>
+<ul>
+	<li>Scaled Time Alive : {{ feature_1 }} </li>
+	<li>Round Winner : {{ label_round }} </li>
+	<li>Time Alive : {{ feature_3 }} </li>	
+</ul>
+
+{% if answer %}
+	<h4> Resultado de la predicción </h4>
+	<ul>
+		<li>Situación del jugador : {{ answer }} </li>
+	</ul>
+{% endif %} 
+<a href="{{ url_for('index')}}">Ir a inicio</a>
+</div>
+{% endblock %}

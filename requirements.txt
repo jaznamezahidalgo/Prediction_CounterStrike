@@ -1,0 +1,7 @@
+flask
+flask-bootstrap
+flask-wtf
+pandas
+numpy
+Scikit-learn
+joblib==1.2.0
